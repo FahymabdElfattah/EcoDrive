@@ -9,32 +9,19 @@ kafka_config = {
 }
 
 # Ethereum Configuration (Infura)
-infura_url = "https://sepolia.infura.io/v3/c8307f509144451ea0915ecc9b318cc0"
+infura_url = "YOUR_INFURA_URL" # Placeholder for Infura URL
 w3 = Web3(Web3.HTTPProvider(infura_url))
 
 # Ethereum Account Configuration
-YOUR_PRIVATE_KEY_A = 'd44b7492a778dc23c248a49dded1325ef7ad28304ab543c97a6242a246b154a4'
-YOUR_ADDRESS_A = '0x788660fa8D25B4EA605F51d9bcf8E989C56b8bfF'  # Replace with Account A's address
-YOUR_PRIVATE_KEY_B = 'd0c76db34cfb154537d1d12b8b2214c838b2ea5298b81bb8825ddc0919e1e25e'
-YOUR_ADDRESS_B = '0xFDCF57A2Eef4d08bd8b617B43809bc8f124e728B'  # Replace with Account B's address
-CONTRACT_ADDRESS = '0x37A6EC1d7E37f7a1c07E77a969d50E5935b48815'
+YOUR_PRIVATE_KEY_A = 'YOUR_PRIVATE_KEY_A' # Placeholder for Account A private key
+YOUR_ADDRESS_A = 'YOUR_ADDRESS_A'         # Placeholder for Account A address
+YOUR_PRIVATE_KEY_B = 'YOUR_PRIVATE_KEY_B' # Placeholder for Account B private key
+YOUR_ADDRESS_B = 'YOUR_ADDRESS_B'         # Placeholder for Account B address
+CONTRACT_ADDRESS = 'YOUR_CONTRACT_ADDRESS' # Placeholder for contract address
 
 # ABI (Application Binary Interface) of the Smart Contract
 CONTRACT_ABI = [
-    {
-        "inputs": [
-            {
-                "internalType": "uint256",
-                "name": "gasValue",
-                "type": "uint256"
-            }
-        ],
-        "name": "applyPenalty",
-        "outputs": [],
-        "stateMutability": "nonpayable",
-        "type": "function"
-    },
-    # ... (other ABI entries)
+    # ... (Your ABI entries here)
 ]
 
 # Instantiate the Ethereum Contract
